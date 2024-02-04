@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lady</title>
+    <meta name="Congee" content="The friendly loving pup" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <link
+      rel="icon"
+      href="/assets/Images/pet-animal-pets-paw-dog-cat-paws_108559.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/logo.png.png" />
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+    </style>
+  </head>
+  <div class="landingpage-wrapper">
+    <body>
+      <header>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="cta" href="playdogdate.html">Book a Play Date</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 style="margin-bottom:50px;">Book a Play Date with Lady</h1>  
+
+        <form id="bookingForm" action="submit_booking.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            
+            <input type="submit" value="Book Now">
+        </form>
+      </main>
+      <footer>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+        &copy; Natascha Sloos 2024
+      </footer>
+    </body>
+  </div>
+</html>
